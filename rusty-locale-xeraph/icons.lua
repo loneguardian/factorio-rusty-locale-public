@@ -1,5 +1,5 @@
-local prototypes = require '__rusty-locale__.prototypes'
-local recipes = require '__rusty-locale__.recipes'
+local prototypes = require '__rusty-locale-xeraph__.prototypes'
+local recipes = require '__rusty-locale-xeraph__.recipes'
 
 
 local _M = {}
