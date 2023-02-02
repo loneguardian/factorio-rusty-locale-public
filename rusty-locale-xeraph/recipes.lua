@@ -26,13 +26,20 @@ end
 
 function _M.partial.get_main_product(recipe)
 --- Get the main product of the given recipe part.
-	if recipe.main_product == '' then return nil
-	elseif recipe.main_product ~= nil then return _M.partial.find_product(recipe, recipe.main_product)
+	if recipe.main_product == '' then
+		return nil
+	elseif recipe.main_product ~= nil then
+		return _M.partial.find_product(recipe, recipe.main_product)
 	elseif recipe.results then
-		if table_size(recipe.results) == 1 then return _M.parse_product(recipe.results[1])
-		else return nil; end
-	elseif recipe.result then return _M.parse_product(recipe.result); end
-	return nil
+		if table_size(recipe.results) == 1 then
+			local _, product = next(recipe.results)
+			return _M.parse_product(product)
+		else
+			return
+		end
+	elseif recipe.result then
+		return _M.parse_product(recipe.result)
+	end
 end
 
 
