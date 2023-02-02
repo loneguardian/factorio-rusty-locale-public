@@ -1,6 +1,14 @@
-# Reporting bugs #
-Please report bugs on [GitHub](https://github.com/theRustyKnife/rusty-locale/issues).
+# Fork Notice #
+This is a fork to Rusty's Locale Utilities v1.0.16 by TheRustyKnife
 
+Original Mod Portal: https://mods.factorio.com/mod/rusty-locale
+
+Original Github Repo: https://github.com/theRustyKnife/rusty-locale
+
+# Reporting bugs #
+Please report bugs on [GitHub](https://github.com/loneguardian/factorio-rusty-locale-public/issues).
+
+# Original README: #
 
 # Why does this exist? #
 Because understanding where exactly do recipes take their locale from took me several days of trial and error (and harassing Bilka on discord). I certainly don't wish anyone to go through that again, so I packaged all of the pain into this convenient little library.
