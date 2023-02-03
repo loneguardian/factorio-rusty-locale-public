@@ -33,14 +33,14 @@ First of all you need to add the lib to your dependencies in `info.json` - somet
 	"name": "moddy-mc-modface",
 	"version": "4.2.0",
 	...
-	"dependencies": [..., "rusty-locale"]
+	"dependencies": [..., "rusty-locale-xeraph"]
 }
 ```
 should do the trick.
 
 Next, import the modules you want to use with something like:
 ```lua
-local rusty_locale = require '__rusty-locale__.locale'
+local rusty_locale = require '__rusty-locale-xeraph__.locale'
 ```
 and call functions on them like:
 ```lua
